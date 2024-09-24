@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="MAD_Alarm_Practical"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
+    />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="369dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="#EFEDED"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/clockImg"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/clock" />
+
+        <TextView
+            android:id="@+id/createAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="190dp"
+            android:text="Create Alarm Clock"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pressingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginRight="10dp"
+            android:text="By pressing buttons, Alarm can be created and cancelled." />
+
+        <TextView
+            android:id="@+id/checkCurrTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="10dp"
+            android:text="Check current time by looking below real digital clock." />
+
+        <TextClock
+            android:id="@+id/textClock"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginRight="10dp"
+            android:format12Hour="hh:mm:ss a MMM d, yyyy"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/createAlarmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#4caf50"
+            android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+            android:drawableTint="@android:color/white"
+            android:text="Create Alarm"
+            android:textAlignment="center" />
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        android:layout_width="369dp"
+        android:layout_height="310dp"
+        app:cardBackgroundColor="#EFEDED"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+        <ImageView
+            android:id="@+id/alarmImg"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/alarm" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Alarm Time:"
+            android:id="@+id/setTime"
+            android:layout_marginTop="190dp"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextClock
+            android:id="@+id/textClock2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="215dp"
+            android:layout_marginRight="10dp"
+            android:format12Hour="hh:mm:ss a"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/cancelAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#4caf50"
+            android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+            android:drawableTint="@android:color/white"
+            android:text="Cancel Alarm"
+            android:textAlignment="center" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TimePicker
+        android:id="@+id/reminderTime"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:headerBackground="#4caf50"
+        android:numbersSelectorColor="#4caf50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="170dp"
+            android:height="23dp"
+            android:textSize="16dp"
+            android:textColor="#4caf50"/>
+        <TextView
+            android:id="@+id/okbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textSize="16dp"
+            android:height="23dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="250dp"
+            android:textColor="#4caf50"/>
+    </TimePicker>
+</androidx.constraintlayout.widget.ConstraintLayout>
