@@ -114,23 +114,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Set Alarm Time:"
-            android:id="@+id/setTime"
+            android:id="@+id/text2"
             android:layout_marginTop="190dp"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/setTime"
+            android:layout_marginTop="220dp"
             android:textAlignment="center"
             android:textSize="14sp"
             android:textStyle="bold"/>
-        <TextClock
-            android:id="@+id/textClock2"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="215dp"
-            android:layout_marginRight="10dp"
-            android:format12Hour="hh:mm:ss a"
-            android:textAlignment="center"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-        <Button
+         <Button
             android:id="@+id/cancelAlarm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -144,36 +141,5 @@
             android:textAlignment="center" />
     </com.google.android.material.card.MaterialCardView>
 
-    <TimePicker
-        android:id="@+id/reminderTime"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:headerBackground="#4caf50"
-        android:numbersSelectorColor="#4caf50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-        <TextView
-            android:id="@+id/cancelbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cancel"
-            android:layout_marginTop="350dp"
-            android:layout_marginLeft="170dp"
-            android:height="23dp"
-            android:textSize="16dp"
-            android:textColor="#4caf50"/>
-        <TextView
-            android:id="@+id/okbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="OK"
-            android:textSize="16dp"
-            android:height="23dp"
-            android:layout_marginTop="350dp"
-            android:layout_marginLeft="250dp"
-            android:textColor="#4caf50"/>
-    </TimePicker>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
