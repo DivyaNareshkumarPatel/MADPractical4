@@ -1,6 +1,6 @@
 # Kotlin Alarm App
 
-##AIM: Create an Android Alarm application by using service & BroadcastReceiver.
+## AIM: Create an Android Alarm application by using service & BroadcastReceiver.
 
 This Kotlin Android application demonstrates the usage of various Android components such as `BroadcastReceiver`, `Service`, `TextClock`, `TimePickerDialog`, `PendingIntent`, `AlarmManager`, and `MediaPlayer` to create a simple alarm application. The app allows users to set alarms, view the current time, and receive notifications when alarms go off.
 
