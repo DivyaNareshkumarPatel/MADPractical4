@@ -18,4 +18,4 @@ This Kotlin Android application demonstrates the usage of various Android compon
 
 ##Screenshots
 
-<img src="https://github.com/DivyaNareshkumarPatel/MADPractical4/blob/master/1.png" alt="Screenshot 1" width="500"/><img src="https://github.com/DivyaNareshkumarPatel/MADPractical4/blob/master/2.png" alt="Screenshot 2" width="500"/><img src="https://github.com/DivyaNareshkumarPatel/MADPractical4/blob/master/3.png" alt="Screenshot 3" width="500"/>
+<img src="https://github.com/DivyaNareshkumarPatel/MADPractical4/blob/master/1.png" alt="Screenshot 1" height="500"/><img src="https://github.com/DivyaNareshkumarPatel/MADPractical4/blob/master/2.png" alt="Screenshot 2" height="500"/><img src="https://github.com/DivyaNareshkumarPatel/MADPractical4/blob/master/3.png" alt="Screenshot 3" height="500"/>
