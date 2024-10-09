@@ -16,6 +16,6 @@ This Kotlin Android application demonstrates the usage of various Android compon
 - **MediaPlayer**: Plays audio files, such as alarm sounds.
 - **MaterialCardView**: A Material Design component that provides a card-like interface for displaying content.
 
-##Screenshots
+## Screenshots
 
 <img src="https://github.com/DivyaNareshkumarPatel/MADPractical4/blob/master/1.png" alt="Screenshot 1" height="500"/><img src="https://github.com/DivyaNareshkumarPatel/MADPractical4/blob/master/2.png" alt="Screenshot 2" height="500"/><img src="https://github.com/DivyaNareshkumarPatel/MADPractical4/blob/master/3.png" alt="Screenshot 3" height="500"/>
